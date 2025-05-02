@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Lengkap Pernikahan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Formulir Lengkap Pernikahan</h1>
+
+      <div class="form-container">
+        <form id="combinedForm">
+          <!-- Wedding Data Section -->
+          <h2 class="section-title">Data Calon Pengantin</h2>
+
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-group">
+                <label for="groomName">Nama Pengantin Pria</label>
+                <input type="text" id="groomName" name="groomName" />
+              </div>
+
+              <div class="form-group">
+                <label for="groomFather">Ayah Pengantin Pria</label>
+                <input type="text" id="groomFather" name="groomFather" />
+              </div>
+
+              <div class="form-group">
+                <label for="groomMother">Ibu Pengantin Pria</label>
+                <input type="text" id="groomMother" name="groomMother" />
+              </div>
+            </div>
+
+            <div class="form-col">
+              <div class="form-group">
+                <label for="brideName">Nama Pengantin Wanita</label>
+                <input type="text" id="brideName" name="brideName" />
+              </div>
+
+              <div class="form-group">
+                <label for="brideFather">Ayah Pengantin Wanita</label>
+                <input type="text" id="brideFather" name="brideFather" />
+              </div>
+
+              <div class="form-group">
+                <label for="brideMother">Ibu Pengantin Wanita</label>
+                <input type="text" id="brideMother" name="brideMother" />
+              </div>
+            </div>
+          </div>
+
+          <h2 class="section-title">Kisah Cinta Kalian</h2>
+
+          <div class="form-group">
+            <textarea
+              id="loveStory"
+              name="loveStory"
+              rows="5"
+              maxlength="500"
+              placeholder="Ceritakan kisah cinta kalian (maks. 500 karakter)"
+            ></textarea>
+            <div class="char-count">
+              <span id="charRemaining">500</span> karakter tersisa
+            </div>
+          </div>
+
+          <!-- Wedding Details Section -->
+          <h2 class="section-title">Detail Akad Nikah</h2>
+
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-group">
+                <label for="akadDate">Tanggal</label>
+                <input type="date" id="akadDate" name="akadDate" />
+              </div>
+            </div>
+            <div class="form-col">
+              <div class="form-group">
+                <label for="akadTime">Waktu</label>
+                <input type="time" id="akadTime" name="akadTime" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="akadLocation">Lokasi Akad Nikah</label>
+            <textarea
+              id="akadLocation"
+              name="akadLocation"
+              rows="2"
+              placeholder="Masukkan alamat"
+            ></textarea>
+          </div>
+
+          <h2 class="section-title">Detail Resepsi</h2>
+
+          <div class="form-group">
+            <label for="resepsiType">Jenis Acara</label>
+            <select id="resepsiType" name="resepsiType">
+              <option value="Resepsi">Resepsi</option>
+              <option value="Ngunduh Mantu">Ngunduh Mantu</option>
+              <option value="Tasyakuran">Tasyakuran</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-group">
+                <label for="resepsiDate">Tanggal</label>
+                <input type="date" id="resepsiDate" name="resepsiDate" />
+              </div>
+            </div>
+            <div class="form-col">
+              <div class="form-group">
+                <label for="resepsiTime">Waktu</label>
+                <input type="time" id="resepsiTime" name="resepsiTime" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="akadLocation">Lokasi Akad Nikah</label>
+            <textarea
+              id="akadLocation"
+              name="akadLocation"
+              rows="2"
+              placeholder="Masukkan alamat"
+            ></textarea>
+          </div>
+
+          <!-- Bank Information Section -->
+          <h2 class="section-title">Informasi Rekening</h2>
+
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-group">
+                <label for="bankName1">Bank 1</label>
+                <input
+                  type="text"
+                  id="bankName1"
+                  name="bankName1"
+                  placeholder="Nama Bank"
+                />
+              </div>
+              <div class="form-group">
+                <label for="accountNumber1">Nomor Rekening</label>
+                <input
+                  type="text"
+                  id="accountNumber1"
+                  name="accountNumber1"
+                  placeholder="1234567890"
+                />
+              </div>
+              <div class="form-group">
+                <label for="accountHolder1">Atas Nama</label>
+                <input
+                  type="text"
+                  id="accountHolder1"
+                  name="accountHolder1"
+                  placeholder="Nama pemilik"
+                />
+              </div>
+            </div>
+
+            <div class="form-col">
+              <div class="form-group">
+                <label for="bankName2">Bank 2 (Opsional)</label>
+                <input
+                  type="text"
+                  id="bankName2"
+                  name="bankName2"
+                  placeholder="Nama Bank"
+                />
+              </div>
+              <div class="form-group">
+                <label for="accountNumber2">Nomor Rekening</label>
+                <input
+                  type="text"
+                  id="accountNumber2"
+                  name="accountNumber2"
+                  placeholder="1234567890"
+                />
+              </div>
+              <div class="form-group">
+                <label for="accountHolder2">Atas Nama</label>
+                <input
+                  type="text"
+                  id="accountHolder2"
+                  name="accountHolder2"
+                  placeholder="Nama pemilik"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Invitation Section -->
+          <h2 class="section-title">Informasi Undangan</h2>
+
+          <div class="form-row">
+            <div class="form-col">
+              <div class="form-group">
+                <label for="kodeUndangan">Kode Undangan</label>
+                <input
+                  type="text"
+                  id="kodeUndangan"
+                  name="kodeUndangan"
+                  placeholder="Kode unik undangan"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-col">
+              <div class="form-group">
+                <label for="temaUndangan">Tema Undangan</label>
+                <select id="temaUndangan" name="temaUndangan">
+                  <option value="">Pilih Tema</option>
+                  <option value="Klasik">Klasik</option>
+                  <option value="Modern">Modern</option>
+                  <option value="Minimalis">Minimalis</option>
+                  <option value="Tradisional">Tradisional</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="requestLagu">Request Lagu</label>
+            <textarea
+              id="requestLagu"
+              name="requestLagu"
+              rows="3"
+              placeholder="Masukkan judul lagu dan artist"
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" id="saveBtn">
+              <span class="btn-icon">💾</span> Simpan Data
+            </button>
+            <div class="send-options">
+              <button type="button" id="sendEmailBtn">
+                <span class="btn-icon">✉️</span> Kirim via Email
+              </button>
+              <button type="button" id="sendWhatsAppBtn">
+                <span class="btn-icon">💬</span> Kirim via WhatsApp
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>
