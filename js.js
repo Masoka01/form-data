@@ -150,7 +150,7 @@ document.getElementById("sendEmailBtn").addEventListener("click", function () {
   const subject = `Data Pernikahan ${formData.pengantin.pria.nama} & ${formData.pengantin.wanita.nama}`;
   const body = formatDataForEmail(formData);
 
-  window.location.href = `mailto:youremail@example.com?subject=${encodeURIComponent(
+  window.location.href = `mailto:dimasmayoni8829@gmail.com?subject=${encodeURIComponent(
     subject
   )}&body=${encodeURIComponent(body)}`;
 });
@@ -160,7 +160,7 @@ document
   .addEventListener("click", function () {
     const formData = getFormData();
     const message = formatDataForWhatsApp(formData);
-    const phoneNumber = "6281234567890"; // Ganti dengan nomor WhatsApp tujuan
+    const phoneNumber = "6289688290484"; // Ganti dengan nomor WhatsApp tujuan
 
     window.open(
       `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
