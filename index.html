@@ -96,7 +96,7 @@
               id="akadLocation"
               name="akadLocation"
               rows="2"
-              placeholder="Masukkan alamat"
+              placeholder="Masukkan alamat lengkap beserta ciri khas tempatnya"
             ></textarea>
           </div>
 
@@ -127,12 +127,12 @@
           </div>
 
           <div class="form-group">
-            <label for="akadLocation">Lokasi Akad Nikah</label>
+            <label for="resepsiLocation">Lokasi Resepsi</label>
             <textarea
-              id="akadLocation"
-              name="akadLocation"
+              id="resepsiLocation"
+              name="resepsiLocation"
               rows="2"
-              placeholder="Masukkan alamat"
+              placeholder="Masukkan alamat lengkap beserta denah lokasi"
             ></textarea>
           </div>
 
@@ -165,7 +165,7 @@
                   type="text"
                   id="accountHolder1"
                   name="accountHolder1"
-                  placeholder="Nama pemilik"
+                  placeholder="Nama pemilik rekening"
                 />
               </div>
             </div>
@@ -195,7 +195,7 @@
                   type="text"
                   id="accountHolder2"
                   name="accountHolder2"
-                  placeholder="Nama pemilik"
+                  placeholder="Nama pemilik rekening"
                 />
               </div>
             </div>
@@ -237,19 +237,24 @@
               id="requestLagu"
               name="requestLagu"
               rows="3"
-              placeholder="Masukkan judul lagu dan artist"
+              placeholder="Masukkan judul lagu dan artist (tekan Enter untuk lagu baru)"
             ></textarea>
           </div>
 
           <div class="form-actions">
-            <button type="submit" id="saveBtn">
-              <span class="btn-icon">💾</span> Simpan Data
-            </button>
             <div class="send-options">
-              <button type="button" id="sendEmailBtn">
+              <button
+                type="button"
+                id="sendEmailBtn"
+                class="send-btn email-btn"
+              >
                 <span class="btn-icon">✉️</span> Kirim via Email
               </button>
-              <button type="button" id="sendWhatsAppBtn">
+              <button
+                type="button"
+                id="sendWhatsAppBtn"
+                class="send-btn wa-btn"
+              >
                 <span class="btn-icon">💬</span> Kirim via WhatsApp
               </button>
             </div>

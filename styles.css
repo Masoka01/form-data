@@ -15,7 +15,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  transition: all 0.3s ease;
 }
 
 body {
@@ -78,6 +78,7 @@ textarea {
 textarea {
   resize: vertical;
   min-height: 80px;
+  line-height: 1.5;
 }
 
 .form-row {
@@ -87,27 +88,6 @@ textarea {
 
 .form-col {
   flex: 1;
-}
-
-button {
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 14px 25px;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  display: block;
-  width: 100%;
-  max-width: 250px;
-  margin: 30px auto 0;
-  font-weight: 500;
-  transition: transform 0.2s;
-}
-
-button:hover {
-  background-color: var(--primary-dark);
-  transform: translateY(-2px);
 }
 
 .section-title {
@@ -138,8 +118,55 @@ button:hover {
   margin-top: 5px;
 }
 
+/* Form Actions */
+.form-actions {
+  margin-top: 40px;
+}
+
+.send-options {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.send-btn {
+  border: none;
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+}
+
+.email-btn {
+  background-color: #d44638;
+  color: white;
+}
+
+.email-btn:hover {
+  background-color: #b33a2e;
+  transform: translateY(-2px);
+}
+
+.wa-btn {
+  background-color: #25d366;
+  color: white;
+}
+
+.wa-btn:hover {
+  background-color: #128c7e;
+  transform: translateY(-2px);
+}
+
 .btn-icon {
   margin-right: 8px;
+  font-size: 18px;
 }
 
 /* Select dropdown styling */
@@ -182,27 +209,14 @@ select {
   }
 }
 
-.send-options {
-  display: flex;
-  gap: 15px;
-  margin-top: 20px;
-  justify-content: center;
-}
+@media (max-width: 480px) {
+  .send-options {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.send-options button {
-  background-color: #4caf50;
-  max-width: 200px;
-  margin: 0;
-}
-
-.send-options button:hover {
-  background-color: #3e8e41;
-}
-
-#sendWhatsAppBtn {
-  background-color: #25d366;
-}
-
-#sendWhatsAppBtn:hover {
-  background-color: #128c7e;
+  .send-btn {
+    width: 100%;
+    max-width: 250px;
+  }
 }
