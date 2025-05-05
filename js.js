@@ -191,7 +191,7 @@ function sendEmail() {
   const subject = `Data Pernikahan ${formData.pengantin.pria.nama} & ${formData.pengantin.wanita.nama}`;
   const body = formatDataForEmail(formData);
 
-  window.location.href = `mailto:dimasmayoni8829@gmail.com?subject=${encodeURIComponent(
+  window.location.href = `mailto:rafimaulanaalifvianto88@gmail.com?subject=${encodeURIComponent(
     subject
   )}&body=${encodeURIComponent(body)}`;
 }
@@ -207,7 +207,7 @@ function sendWhatsApp() {
   const formData = getFormData();
   const message = formatDataForWhatsApp(formData);
   window.open(
-    `https://wa.me/6289688290484?text=${encodeURIComponent(message)}`,
+    `https://wa.me/6285731149936?text=${encodeURIComponent(message)}`,
     "_blank"
   );
 }
